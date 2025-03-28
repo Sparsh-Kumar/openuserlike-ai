@@ -1,0 +1,33 @@
+<div class="chatbot">
+  <header>
+    <h2>{{chatBoxConfig.chatBoxHeading}}</h2>
+    <span class="material-symbols-outlined" (click)="closeChatBox()">{{chatBoxConfig.btnIcnTop}}</span>
+  </header>
+  <ul class="chatbox">
+    <li class="chat incoming">
+      <span class="material-symbols-outlined">{{chatBoxConfig.btnIcnChatBox}}</span>
+      <p>{{chatBoxConfig.chatBoxIncomingPara}}</p>
+    </li>
+    <li class="chat outgoing">
+      <p>{{chatBoxConfig.chatBoxOutgoingPara}}</p>
+    </li>
+    <li class="chat incoming">
+      <span class="material-symbols-outlined">{{chatBoxConfig.btnIcnChatBox}}</span>
+      <p>{{chatBoxConfig.chatBoxIncomingPara}}</p>
+    </li>
+    <li class="chat outgoing">
+      <p>{{chatBoxConfig.chatBoxOutgoingPara}}</p>
+    </li>
+    <li class="chat incoming">
+      <span class="material-symbols-outlined">{{chatBoxConfig.btnIcnChatBox}}</span>
+      <p>{{chatBoxConfig.chatBoxIncomingPara}}</p>
+    </li>
+    <li class="chat outgoing">
+      <p>{{chatBoxConfig.chatBoxOutgoingPara}}</p>
+    </li>
+  </ul>
+  <div class="chat-input">
+    <textarea placeholder="Enter a message ..." required></textarea>
+    <span id="send-btn" class="material-symbols-outlined">{{chatBoxConfig.sendBtnIcn}}</span>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="chatwidget">
+  <button class="chatbot-toggler" (click)="toggleWidget()">
+    <span *ngIf="chatWidgetConfig.isClicked; else elseBlock" class="material-symbols-outlined">
+      {{chatWidgetConfig.clickedInIcn}}
+    </span>
+    <ng-template #elseBlock>
+      <span class="material-symbols-outlined">
+        {{chatWidgetConfig.clickedOutIcn}}
+      </span>
+    </ng-template>
+  </button>
+</div>

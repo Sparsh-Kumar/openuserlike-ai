@@ -1,0 +1,6 @@
+<div class="userlike">
+  <app-chatwidget [chatWidgetConfig]="chatWidgetConfig"></app-chatwidget>
+  <div *ngIf="isChatBoxVisible">
+    <app-chatbox [chatBoxConfig]="chatBoxConfig"></app-chatbox>
+  </div>
+</div>
